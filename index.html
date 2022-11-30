@@ -1,0 +1,64 @@
+<!-- Name: Tashia Boddu
+Email: Tashia_Boddu@student.uml.edu
+Project Created: November 26th 2022
+Purpose of Project: Understand and create a dynamic table that
+interacts with the user. Learn JS and JQuery as well as well -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- CSS links -->
+  <link rel="stylesheet" href="css/bananas.css"/>
+  <!-- JQuery Links -->
+  <script src="https://code.jquery.com/jquery-3.6.1.js"
+    integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+  <!-- JQuery Validation Links -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+  <script src="js/apples.js"></script>
+  <!-- JQueryUI -->
+   <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <title>Interactive Table</title>
+</head>
+
+<body>
+  <h1>Dynamic Multiplication Table</h1>
+  <h2>Please Enter The Table Ranges</h2>
+
+  <!-- create form that allows user to input values -->
+  <div class="form_input">
+    <!-- activate createTable() func in JS-->
+    <form id="signupForm" autocomplete="off">
+      <label for="min_col">Minimum Column Value</label><br>
+      <input type="text" id="mincol" name="mincol"><br>
+      <div id="slide_minCol" class="slider"></div>
+
+      <label for="max_col">Maximum Column Value</label><br>
+      <input type="text" id="maxcol" name="maxcol"><br>
+       <div id="slide_maxCol" class="slider"></div>
+
+      <label for="min_row">Minimum Row Value</label><br>
+      <input type="text" id="minrow" name="minrow"><br>
+      <div id="slide_minRow" class="slider"></div>
+
+      <label for="max_row">Maximum Row Value</label><br>
+      <input type="text" id="maxrow" name="maxrow"><br>
+      <div id="slide_maxRow" class="slider"></div>
+
+      <input class = "submit" type="submit" value="submit" >
+  </form>
+  </div>
+
+  <div id="tabs">
+    <!-- Contains the li's of each tab -->
+    <ul id="tabT"></ul>
+    <!-- Will contain divs with each respective table -->
+  </div>
+  <div id="tabL">
+    <button class="delete-btn" onclick="deleteTabs()">Delete Selected</button>
+  </div>
+</body>
+</html>
