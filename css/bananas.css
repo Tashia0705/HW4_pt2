@@ -1,0 +1,157 @@
+/* Name: Tashia Boddu
+Email: Tashia_Boddu@student.uml.edu
+Project Created: November 26th 2022
+Purpose of Project: Understand and create a dynamic table that
+interacts with the user. Learn JS and JQuery as well */
+
+/* background color */
+body {
+  background-color: #e6e6ff;
+}
+
+/* customize h1 */
+h1 {
+  font-family: Trebuchet MS;
+  margin-left: 500px;
+  margin-top: 20px;
+  color: #00004d;
+}
+
+/* customize h2 */
+h2 {
+  font-family: Trebuchet MS;
+  margin-left: 50px;
+  margin-top: 60px;
+  color: #00004d;
+}
+
+/* customize size of input font and position */
+.form_input {
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+/* customize form such as colors, width of the input bar,
+and where it appears on the website*/
+input[type=text], select {
+  font-family: Trebuchet MS;
+  background-color: #ccccff;
+  width: 26%;
+  padding: 14px 20px;
+  margin: 6px 0;
+  border: 1px solid #b3b3ff;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+/* customizr size of submit button as well as color and position */
+input[type=submit] {
+  width: 26%;
+  background-color: #6666ff;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* change color font of input text */
+input, select, textarea {
+font-size: 100%;
+font-family: Trebuchet MS;
+color: #4d4dff;
+}
+
+/* change color font of labels above input text */
+label {
+  font-family: Trebuchet MS;
+  color: #4d4dff;
+}
+
+/* set boarder color size and boarder type of table */
+table {
+  border-collapse: collapse;
+  border: 2px solid #4d4dff;
+  width: 100%;
+  height: 100%;
+}
+
+/* set border inside table and change font */
+td {
+  border: 1px solid #b3b3ff;
+  padding: 6px;
+  text-align: center;
+  font-family: Trebuchet MS;
+  color: #6666ff;
+}
+
+/* change colors of header */
+.header {
+  background: #6666ff;
+  color: white;
+}
+
+@media screen and (max-width: 500px) {
+  form {
+    width: 80%;
+  }
+  #Table {
+    width: 90%;
+  }
+}
+
+/* allows table to have a fixed position and scrolling feature */
+#Table {
+  margin: auto;
+  height: 500px;
+  overflow: auto;
+  margin-left: 600px;
+  margin-top: -360px;
+  width: 50%;
+}
+
+.slider {
+  width: 26%;
+  margin-bottom: 15px;
+}
+
+/* customize tabs that store individual tables */
+#tabs {
+  height: 500px;
+  overflow: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  width: 90%;
+  background-color: #e6e6ff;
+  border: 1px solid #b3b3ff;
+}
+
+/* button used to close individual tabs */
+#close-btn {
+    cursor: pointer;
+    display: inline;
+    background-color: #800000;
+    border-radius: 20%;
+}
+
+/* customize list of tabs ready to be deleted */
+#tabL {
+    margin-left: 50px;
+    width: 90%;
+    border: 1px solid #6666ff;
+    padding: 10px;
+    text-align: center;
+    background-color: #b3b3ff;
+    border-radius: 30px;
+}
+
+/* customize delete button */
+.delete-btn {
+    background-color: #6666ff;
+    color: white;
+    font-family: Trebuchet MS;
+    font-size: large;
+    border: none;
+    border-radius: 20px;
+}
